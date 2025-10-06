@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الدردشة مع أبو الشات المحلي 🤖</title>
+  <title>أبو الشات المحلي</title>
   <style>
     * {
       box-sizing: border-box;
@@ -207,211 +207,43 @@
     
     /* ========== MEDIA QUERIES للهواتف ========== */
     
-    /* هواتف صغيرة (أقل من 400px) */
     @media (max-width: 400px) {
-      body {
-        padding: 10px;
-      }
-      
-      .chat-box {
-        padding: 15px;
-        border-radius: 15px;
-        height: 95vh;
-      }
-      
-      h2 {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-      }
-      
-      .status {
-        font-size: 0.8rem;
-        padding: 6px 10px;
-        margin-bottom: 10px;
-      }
-      
-      .messages {
-        padding: 10px;
-        margin-bottom: 12px;
-      }
-      
-      .user, .bot {
-        max-width: 92%;
-        padding: 8px 12px;
-        font-size: 0.9rem;
-        margin: 8px 0;
-      }
-      
-      input {
-        padding: 10px 12px;
-        font-size: 15px;
-        min-height: 45px;
-      }
-      
-      button {
-        padding: 10px 15px;
-        font-size: 15px;
-        min-height: 45px;
-        min-width: 60px;
-      }
-      
-      .typing-dot {
-        width: 5px;
-        height: 5px;
-      }
+      body { padding: 10px; }
+      .chat-box { padding: 15px; border-radius: 15px; height: 95vh; }
+      h2 { font-size: 1.2rem; margin-bottom: 10px; }
+      .status { font-size: 0.8rem; padding: 6px 10px; margin-bottom: 10px; }
+      .messages { padding: 10px; margin-bottom: 12px; }
+      .user, .bot { max-width: 92%; padding: 8px 12px; font-size: 0.9rem; margin: 8px 0; }
+      input { padding: 10px 12px; font-size: 15px; min-height: 45px; }
+      button { padding: 10px 15px; font-size: 15px; min-height: 45px; min-width: 60px; }
+      .typing-dot { width: 5px; height: 5px; }
     }
     
-    /* هواتف متوسطة (من 401px إلى 480px) */
     @media (min-width: 401px) and (max-width: 480px) {
-      body {
-        padding: 12px;
-      }
-      
-      .chat-box {
-        padding: 18px;
-        height: 92vh;
-      }
-      
-      h2 {
-        font-size: 1.3rem;
-      }
-      
-      .user, .bot {
-        max-width: 88%;
-        font-size: 0.92rem;
-      }
-      
-      input {
-        min-height: 48px;
-      }
-      
-      button {
-        min-height: 48px;
-      }
+      body { padding: 12px; }
+      .chat-box { padding: 18px; height: 92vh; }
+      h2 { font-size: 1.3rem; }
+      .user, .bot { max-width: 88%; font-size: 0.92rem; }
+      input { min-height: 48px; }
+      button { min-height: 48px; }
     }
     
-    /* هواتف كبيرة وأجهزة لوحية صغيرة (من 481px إلى 768px) */
     @media (min-width: 481px) and (max-width: 768px) {
-      .chat-box {
-        max-width: 450px;
-        height: 85vh;
-      }
-      
-      h2 {
-        font-size: 1.35rem;
-      }
-      
-      .user, .bot {
-        max-width: 82%;
-      }
+      .chat-box { max-width: 450px; height: 85vh; }
+      h2 { font-size: 1.35rem; }
+      .user, .bot { max-width: 82%; }
     }
     
-    /* تحسينات للوضع الأفقي على الهواتف */
     @media (max-height: 500px) and (orientation: landscape) {
-      body {
-        padding: 8px;
-      }
-      
-      .chat-box {
-        height: 96vh;
-        padding: 12px;
-      }
-      
-      h2 {
-        font-size: 1.1rem;
-        margin-bottom: 8px;
-      }
-      
-      .status {
-        font-size: 0.75rem;
-        padding: 4px 8px;
-        margin-bottom: 8px;
-      }
-      
-      .messages {
-        height: 65vh;
-        margin-bottom: 8px;
-        padding: 8px;
-      }
-      
-      .user, .bot {
-        padding: 6px 10px;
-        font-size: 0.85rem;
-        margin: 6px 0;
-        max-width: 90%;
-      }
-      
-      .input-container {
-        gap: 6px;
-      }
-      
-      input {
-        padding: 8px 10px;
-        min-height: 40px;
-        font-size: 14px;
-      }
-      
-      button {
-        padding: 8px 12px;
-        min-height: 40px;
-        min-width: 55px;
-        font-size: 14px;
-      }
-    }
-    
-    /* تحسينات للشاشات الدارك مود */
-    @media (prefers-color-scheme: dark) {
-      .chat-box {
-        background: #2d3748;
-        color: #e2e8f0;
-      }
-      
-      h2 {
-        color: #e2e8f0;
-      }
-      
-      .messages {
-        background: #4a5568;
-        border-color: #718096;
-      }
-      
-      .bot {
-        background: #4a5568;
-        color: #e2e8f0;
-      }
-      
-      input {
-        background: #4a5568;
-        color: #e2e8f0;
-        border-color: #718096;
-      }
-      
-      input::placeholder {
-        color: #a0aec0;
-      }
-      
-      input:focus {
-        border-color: #63b3ed;
-      }
-    }
-    
-    /* منع تكبير النص على iOS */
-    @supports (-webkit-touch-callout: none) {
-      input, button {
-        font-size: 16px; /* يمنع التكبير التلقائي في iOS */
-      }
-    }
-    
-    /* تحسينات للأجهزة التي تدعم اللمس */
-    @media (hover: none) and (pointer: coarse) {
-      button:hover {
-        transform: none;
-        background: #007bff;
-      }
-      
-      button:active {
-        background: #0056b3;
-      }
+      body { padding: 8px; }
+      .chat-box { height: 96vh; padding: 12px; }
+      h2 { font-size: 1.1rem; margin-bottom: 8px; }
+      .status { font-size: 0.75rem; padding: 4px 8px; margin-bottom: 8px; }
+      .messages { height: 65vh; margin-bottom: 8px; padding: 8px; }
+      .user, .bot { padding: 6px 10px; font-size: 0.85rem; margin: 6px 0; max-width: 90%; }
+      .input-container { gap: 6px; }
+      input { padding: 8px 10px; min-height: 40px; font-size: 14px; }
+      button { padding: 8px 12px; min-height: 40px; min-width: 55px; font-size: 14px; }
     }
   </style>
 </head>
@@ -427,12 +259,11 @@
   </div>
 
   <script>
-    // قاعدة معرفة للردود الذكية
     const knowledgeBase = {
       greetings: [
         "أهلاً وسهلاً بك! 😊 كيف يمكنني مساعدتك اليوم؟",
-        "مرحباً! أنا أبو الشات  عم شات جي بي تي🤖 سعيد بلقائك!",
-        "أهلاً بك محمود بيه! كيف حالك اليوم؟"
+        "مرحباً! أنا أبو الشات 🤖 سعيد بلقائك!",
+        "أهلاً بك! كيف حالك اليوم؟"
       ],
       farewells: [
         "مع السلامة! 🙋‍♂️ كان جميل التحدث معك",
@@ -440,7 +271,7 @@
         "وداعاً! أتمنى لك يوماً رائعاً 🌟"
       ],
       thanks: [
-        "العفو يمحمود بيه! 😊 سعيد لأنني استطعت مساعدتك",
+        "العفو! 😊 سعيد لأنني استطعت مساعدتك",
         "لا شكر على واجب! أنا هنا لخدمتك دائماً",
         "شكراً لك على كلماتك اللطيفة! 🤗"
       ],
@@ -456,92 +287,67 @@
       ],
       weather: [
         "للأسف لا أستطيع الوصول لبيانات الطقس المباشرة حالياً",
-      
+        "يمكنك استخدام تطبيقات الطقس مثل Weather.com أو AccuWeather"
       ],
       time: [
         `حالياً الوقت هو: ${new Date().toLocaleTimeString('ar-EG')}`,
         `التاريخ اليوم: ${new Date().toLocaleDateString('ar-EG')}`
       ],
       jokes: [
-        "لماذا لا يثق المبرمجون بالطبيعة؟ لأن فيها الكثير من البقز(Bugs)! 🐛",
+        "لماذا لا يثق المبرمجون بالطبيعة؟ لأن فيها الكثير من البق (Bugs)! 🐛",
         "ما هو المبرمج المفضل لدى البحر؟ C (Sea)! 🌊",
         "لماذا كان الكمبيوتر يغني تحت الدش؟ لأنه وجد أغنية (Song) جديدة! 🎵"
       ]
     };
 
-    // نمط شخصية أبو الشات
     const botPersonality = {
       name: "أبو الشات",
       traits: ["مفيد", "مرح", "داعم", "صادق"],
       style: "ودود ومباشر مع لمسة من الفكاهة"
     };
 
-    // إضافة رسالة ترحيب عند التحميل
     window.onload = function() {
-      addBotMessage("مرحباً! أنا أبو الشات المحلي 🤖 محمود عامر من قام بصنعي وانا جاهز للمساعدة! كل الردود من جهازك مباشرة - بدون أي تكاليف! 💯");
+      addBotMessage("مرحباً! أنا أبو الشات المحلي 🤖 جاهز للمساعدة! كل الردود من جهازك مباشرة - بدون أي تكاليف! 💯");
     };
 
-    // التعامل مع ضغط مفتاح Enter
     function handleKeyPress(event) {
       if (event.key === 'Enter') {
         sendMessage();
       }
     }
 
-    // إرسال رسالة
     async function sendMessage() {
       const input = document.getElementById("message");
       const sendBtn = document.getElementById("sendBtn");
 
       const userMessage = input.value.trim();
       
-      // تحقق من الإدخال الفارغ
-      if (!userMessage) {
-        return;
-      }
+      if (!userMessage) return;
 
-      // عرض رسالة المستخدم
       addUserMessage(userMessage);
-      
-      // تعطيل الزر أثناء المعالجة
       sendBtn.disabled = true;
       input.value = "";
       
-      // إضافة مؤشر تحميل مع تأثير الكتابة
       const loadingMsg = addTypingIndicator();
 
-      // محاكاة وقت التفكير (للطبيعية)
       await new Promise(resolve => setTimeout(resolve, 800 + Math.random() * 1200));
 
       try {
-        // توليد رد ذكي
         const botReply = generateSmartResponse(userMessage);
-        
-        // إزالة مؤشر الكتابة وعرض الرد
         loadingMsg.remove();
         addBotMessage(botReply);
-
       } catch (error) {
-        // في حالة حدوث أي خطأ
-        try { 
-          loadingMsg.remove(); 
-        } catch (e) {
-          console.log("لا يمكن إزالة رسالة التحميل:", e);
-        }
-        
+        try { loadingMsg.remove(); } catch (e) {}
         addErrorMessage(`عذراً، حدث خطأ: ${error.message}`);
-        console.error("Error:", error);
       } finally {
         sendBtn.disabled = false;
         input.focus();
       }
     }
 
-    // توليد رد ذكي بناءً على رسالة المستخدم
     function generateSmartResponse(userMessage) {
       const message = userMessage.toLowerCase();
       
-      // البحث عن أفضل رد بناءً على المحتوى
       if (message.includes('مرحبا') || message.includes('اهلا') || message.includes('السلام') || message.includes('hello') || message.includes('hi')) {
         return getRandomResponse(knowledgeBase.greetings);
       }
@@ -576,7 +382,6 @@
         return "للأسف لا أستطيع تذوق الطعام، لكني أسمع أن البيتزا والكنافة رائعين! 🍕😋";
       }
       else {
-        // رد ذكي عام مع لمسة شخصية
         const generalResponses = [
           `هذا سؤال مثير للاهتمام! كـ${botPersonality.name}، أعتقد أن الموضوع يستحق البحث أكثر.`,
           "ممم... دعني أفكر. بناءً على معرفتي المحدودة، هذا ما يمكنني قوله...",
@@ -589,12 +394,10 @@
       }
     }
 
-    // الحصول على رد عشوائي من مصفوفة
     function getRandomResponse(responses) {
       return responses[Math.floor(Math.random() * responses.length)];
     }
 
-    // إضافة مؤشر الكتابة
     function addTypingIndicator() {
       const chat = document.getElementById("chat");
       const messageDiv = document.createElement("div");
@@ -602,7 +405,7 @@
       messageDiv.className = "bot loading";
       messageDiv.innerHTML = `
         <div class="typing-indicator">
-          <span> ثوان بكتب </span>
+          <span>جاري الكتابة</span>
           <div class="typing-dot"></div>
           <div class="typing-dot"></div>
           <div class="typing-dot"></div>
@@ -611,33 +414,20 @@
       
       chat.appendChild(messageDiv);
       chat.scrollTop = chat.scrollHeight;
-      
       return messageDiv;
     }
 
-    // وظائف مساعدة لإضافة الرسائل
-    function addUserMessage(text) {
-      return addMessage(text, "user");
-    }
-
-    function addBotMessage(text, className = "") {
-      return addMessage(text, "bot", className);
-    }
-
-    function addErrorMessage(text) {
-      return addMessage(text, "error");
-    }
+    function addUserMessage(text) { return addMessage(text, "user"); }
+    function addBotMessage(text, className = "") { return addMessage(text, "bot", className); }
+    function addErrorMessage(text) { return addMessage(text, "error"); }
 
     function addMessage(text, type, className = "") {
       const chat = document.getElementById("chat");
       const messageDiv = document.createElement("div");
-      
       messageDiv.className = `${type} ${className}`;
       messageDiv.innerText = text;
-      
       chat.appendChild(messageDiv);
       chat.scrollTop = chat.scrollHeight;
-      
       return messageDiv;
     }
   </script>
